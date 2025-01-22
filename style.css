@@ -1,3 +1,8 @@
-body{
+nav{
     border: 2px solid black;
+    display: flex;
+}
+section{
+    border: 2px solid black;
+    display: flex;
 }
