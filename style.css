@@ -84,4 +84,61 @@ nav ul a{
 }
 .curriculum-description{
     display: flex;
+    gap: 28px;
+}
+.curriculum-1{
+    background: linear-gradient(180deg, #DEF5FF, #FFFFFF);
+    padding: 52px 40px;
+    text-align: center;
+    border-radius: 19px;
+}
+.curriculum-2{
+    background: linear-gradient(180deg, #FFF4DC, #FFFFFF);
+    padding: 52px 40px;
+    text-align: center;
+    border-radius: 19px;
+}
+.curriculum-3{
+    background: linear-gradient(180deg, #F2E8FF, #FFFFFF);
+    padding: 52px 40px;
+    text-align: center;
+    border-radius: 19px;
+}
+.curriculum a{
+    text-decoration: none;
+}
+.kinder{
+    color: #64C8FF;
+}
+.elementary{
+    color: #F0AA00;
+}
+.middle{
+    color: #8700FF;
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 80px;
+}
+.arrow {
+    border-radius: 30px;
+    border: none;
+    background-color: orange;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+/*story*/
+
+.story{
+    padding: 120px 141px 60px;
+}
+.stories{
+    display: flex;
+    flex-wrap: wrap;
 }
