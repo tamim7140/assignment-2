@@ -1,8 +1,87 @@
-nav{
-    border: 2px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+body{
+    font-family: "Fira Sans", serif;
+}
+
+
+/*nav ber*/
+
+.nav-ber{
+    display: flex;
+    margin: 20px 141px;
+}
+.school-more{
     display: flex;
 }
-section{
-    border: 2px solid black;
+nav ul li{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+}
+.btn-1{
+    color: white;
+    background-color: orange;
+    padding: 10px 60.5px;
+    border: none;
+    border-radius: 12px;
+}
+.home{
+    color: orange;
+    padding-left: 186px;
+}
+.about{
+    color: skyblue;
+    padding-left: 32px;
+}
+.facilities{
+    color: #05D4DF;
+    padding-left: 32px;
+}
+.admission{
+    color: #5D58EF;
+    padding-left: 32px;
+    padding-right: 186px;
+}
+
+
+/*banner*/
+
+.banner{
+    display: flex;
+    padding: 0px 141px;
+    align-items: center;
+}
+.banner-title{
+    font-size: 60px;
+}
+.title-1{
+    color: orange;
+}
+.title-2{
+    color: skyblue;
+}
+.btn-2{
+    color: white;
+    background-color: black;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+/*curriculum*/
+
+.curriculum{
+    padding: 0px 141px;
+}
+.curriculum-title{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    font-size: 46px;
+}
+.curriculum-description{
     display: flex;
 }
