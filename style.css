@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     font-family: "Fira Sans", serif;
+    padding: 0 13vw;
 }
 
 
@@ -9,10 +14,13 @@ body{
 
 .nav-ber{
     display: flex;
-    margin: 20px 141px;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
 }
 .school-more{
     display: flex;
+    gap: 5rem;
 }
 nav ul li{
     list-style: none;
@@ -29,32 +37,29 @@ nav ul a{
 }
 .home{
     color: orange;
-    padding-left: 186px;
+    padding-left: 5rem;
 }
 .about{
     color: skyblue;
-    padding-left: 32px;
 }
 .facilities{
     color: #05D4DF;
-    padding-left: 32px;
 }
 .admission{
     color: #5D58EF;
-    padding-left: 32px;
-    padding-right: 186px;
+    padding-right: 10vw;
 }
-
 
 /*banner*/
 
 .banner{
     display: flex;
-    padding: 0px 141px;
+    padding: 2rem auto;
     align-items: center;
+    justify-content: center;
 }
 .banner-title{
-    font-size: 60px;
+    font-size: 3.5rem;
 }
 .title-1{
     color: orange;
@@ -62,7 +67,7 @@ nav ul a{
 .title-2{
     color: skyblue;
 }
-.btn-2{
+.btn-2, .btn-3{
     color: white;
     background-color: black;
     padding: 10px 47px;
@@ -71,10 +76,21 @@ nav ul a{
 }
 
 
+
+@media screen and (max-width: 576px) {
+     .nav-ber, .banner .school-more{
+        flex-direction: column;
+     }
+}
+
+
+
 /*curriculum*/
 
 .curriculum{
     padding: 0px 141px;
+    background-image: url(images/bg.png);
+
 }
 .curriculum-title{
     text-align: center;
@@ -135,10 +151,92 @@ nav ul a{
 
 /*story*/
 
-.story{
+/*.story{
     padding: 120px 141px 60px;
+    background-image: url(images/bg.png);
+    border: saddlebrown solid 5px;
+    background:linear-gradient(white, #ffe5b9)
 }
 .stories{
+    border: solid darkgoldenrod 5px;
     display: flex;
-    flex-wrap: wrap;
 }
+.story-1, .story-2, .story-3, .story-4, .story-5, .story-heading, .story-btn{
+    border: solid black 2px;
+}
+.story-heading{
+    text-align: center;
+}
+.story-1, .story-2, .story-3, .story-4, .story-5{
+    background-color: white;
+}
+.extra-stories{
+    border: solid firebrick 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.story-1{
+    width: 500px;
+}
+.story-2, .story-3, .story-4, .story-5{
+    width: 265px;
+}
+.story-img{
+    width: 100%;
+}
+.date{
+    position: absolute;
+    background-color: #95B226;
+    text-align: center;
+    border-radius: 47px;
+    width: 174px;
+}
+.story-btn{
+    border: #01ACFD solid;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.btn-3{
+    color: white;
+    background-color: black;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+}*/
+.story{
+    background:linear-gradient(white, #ffe5b9);
+}
+.stories{
+    display: grid;
+    grid-template-columns: 400px 200px 200px;
+
+    justify-content: center;
+    gap: 19px;
+}
+/*.story-1, .story-2, .story-3, .story-4, .story-5{
+    border: solid seagreen;
+}*/
+.story-img > img{
+    width: 100%;
+}
+.story-1{
+    grid-row: 1/ span 3;
+    background-color: aquamarine;
+            
+}
+.story-heading, .story-btn{
+    text-align: center;
+}
+
+/*footer*/
+
+/*.school-footer{
+    display: flex;
+    background-color: #01ACFD;
+    padding: 123px 228px 174px 140px;
+}
+.footer-description{
+    display: flex;
+}
+*/
