@@ -6,21 +6,27 @@
 
 body{
     font-family: "Fira Sans", serif;
-    padding: 0 13vw;
 }
 
 
 /*nav ber*/
 
+
 .nav-ber{
+    max-width: 1158px;
+    margin: 0 auto;
     display: flex;
     margin: 2rem auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
 }
 .school-more{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
 }
 nav ul li{
     list-style: none;
@@ -37,7 +43,6 @@ nav ul a{
 }
 .home{
     color: orange;
-    padding-left: 5rem;
 }
 .about{
     color: skyblue;
@@ -47,12 +52,16 @@ nav ul a{
 }
 .admission{
     color: #5D58EF;
-    padding-right: 10vw;
 }
+
+
+
 
 /*banner*/
 
 .banner{
+    max-width: 1158px;
+    margin: 0 auto;
     display: flex;
     padding: 2rem auto;
     align-items: center;
@@ -77,18 +86,18 @@ nav ul a{
 
 
 
-@media screen and (max-width: 576px) {
+/*@media screen and (max-width: 576px) {
      .nav-ber, .banner .school-more{
         flex-direction: column;
-     }
-}
+     }*/
 
 
 
 /*curriculum*/
 
 .curriculum{
-    padding: 0px 141px;
+    max-width: 1158px;
+    margin: 0 auto;
     background-image: url(images/bg.png);
 
 }
@@ -204,12 +213,16 @@ nav ul a{
     border: none;
     border-radius: 12px;
 }*/
+
+
 .story{
     background:linear-gradient(white, #ffe5b9);
+    max-width: 1158px;
+    margin: 0 auto;
 }
 .stories{
     display: grid;
-    grid-template-columns: 400px 200px 200px;
+    grid-template-columns: 2fr 1fr 1fr;
 
     justify-content: center;
     gap: 19px;
@@ -230,8 +243,12 @@ nav ul a{
 }
 
 /*footer*/
-
-/*.school-footer{
+footer{
+    max-width: 1158px;
+    text-align: center;
+    display: inline;
+}
+.school-footer{
     display: flex;
     background-color: #01ACFD;
     padding: 123px 228px 174px 140px;
@@ -239,4 +256,3 @@ nav ul a{
 .footer-description{
     display: flex;
 }
-*/
