@@ -8,6 +8,9 @@ body{
     font-family: "Fira Sans", serif;
 }
 
+marquee{
+    background-color: #64C8FF;
+}
 
 /*nav ber*/
 
@@ -103,6 +106,12 @@ nav ul a{
         max-width: 357px;
         margin: 0px auto;
      }
+     .banner-box{
+        text-align: center;
+     }
+     marquee{
+        display: none;
+     }
      }
 
 
@@ -179,7 +188,10 @@ nav ul a{
     
     .curriculum-description{
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+    }
+    .arrows{
+        display: none;
     }
 }
 
@@ -301,15 +313,15 @@ nav ul a{
 .footer-description{
     display: flex;
 }*/
-footer{
+.school-footer{
     background-color: #01ACFD;
     display: flex;
     gap: 150px;
     padding: 100px;
 }
-.footer-description{
-    display: flex;
-}
+.footer-description, .footer-about, .footer-links{
+    color: white;
+} 
 .footer-about{
     display: flex;
     flex-direction: column;
