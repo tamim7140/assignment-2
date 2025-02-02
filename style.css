@@ -90,6 +90,19 @@ nav ul a{
 .banner-img{
     width: 100%;
 }
+.menu-icon {
+    display: none;
+    width: 35px;
+    height: 30px;
+}
+.menu-icon span {
+    display: block;
+    background: black;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    margin: 6px 0;
+}
 
 
 
@@ -112,6 +125,9 @@ nav ul a{
      }
      marquee{
         display: none;
+     }
+     .menu-icon{
+        display: block;
      }
      }
 
@@ -200,11 +216,9 @@ nav ul a{
 
 
 .story{
-    background-image: url(images/bg.png);
-    background:linear-gradient(white, #ffe5b9);
-    background-size: cover;
+    background: url(images/bg.png), linear-gradient(white, #ffe5b9);
     background-position: center;
-    margin: 0 auto;
+    padding: 0 auto;
 }
 .stories{
     display: grid;
