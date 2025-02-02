@@ -100,6 +100,8 @@ nav ul a{
      }
      .banner{
         flex-direction: column-reverse;
+        max-width: 357px;
+        margin: 0px auto;
      }
      }
 
@@ -170,11 +172,15 @@ nav ul a{
     font-size: 30px;
 }
 @media screen and (max-width: 576px) {
+    .curriculum{
+        max-width: 357px;
+        margin: 0px auto;
+    }
+    
     .curriculum-description{
         flex-direction: column;
         gap: 20px;
     }
-
 }
 
 /*story*/
@@ -257,10 +263,26 @@ nav ul a{
     padding: 10px 0;
 }
 @media screen and (max-width: 576px) { 
+    .story{
+        margin: 0px auto;
+    }
     .stories{
+        max-width: 357px;
         grid-template-columns: 1fr 1fr;
     .story-1{
         display: none;
+    }
+    .date{
+        width: 50px;
+        font-size: 10px;
+        border-radius: 10px;
+        padding: 5px 0;
+        position: relative;
+        left: 5vw;
+        top: -8vh;
+    }
+    .story-description{
+        padding: 0 38px 34px 25px;
     }
     }
 }
