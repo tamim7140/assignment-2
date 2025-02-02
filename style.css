@@ -10,6 +10,7 @@ body{
 
 marquee{
     background-color: #64C8FF;
+    color: white;
 }
 
 /*nav ber*/
@@ -316,7 +317,7 @@ nav ul a{
 .school-footer{
     background-color: #01ACFD;
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
     padding: 100px;
 }
 .footer-description, .footer-about, .footer-links{
@@ -325,4 +326,24 @@ nav ul a{
 .footer-about{
     display: flex;
     flex-direction: column;
+    line-height: 2;
+}
+.footer-about> a{
+    text-decoration: none;
+    color: white;
+}
+.footer-links> h3{
+    padding-bottom: 20px;
+}
+.janina{
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .school-footer{
+        flex-direction: column;
+        gap: 40px;
+    }
 }
