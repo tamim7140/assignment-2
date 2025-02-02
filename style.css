@@ -57,6 +57,13 @@ nav ul a{
 .admission{
     color: #5D58EF;
 }
+hr{
+    display: none;
+    border: none;
+    height: 2px;
+    background-color: orange;
+    width: 100%;
+}
 
 
 
@@ -127,6 +134,9 @@ nav ul a{
         display: none;
      }
      .menu-icon{
+        display: block;
+     }
+     hr{
         display: block;
      }
      }
