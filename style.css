@@ -83,13 +83,17 @@ nav ul a{
     border: none;
     border-radius: 12px;
 }
+.banner-img{
+    width: 100%;
+}
 
 
 
-/*@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
      .nav-ber, .banner .school-more{
         flex-direction: column;
-     }*/
+    }
+     }
 
 
 
@@ -217,31 +221,80 @@ nav ul a{
 
 .story{
     background:linear-gradient(white, #ffe5b9);
-    max-width: 1158px;
     margin: 0 auto;
 }
 .stories{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-
     justify-content: center;
     gap: 19px;
+    max-width: 1158px;
+    margin: 0 auto;
+    /*position: relative;*/
 }
 /*.story-1, .story-2, .story-3, .story-4, .story-5{
     border: solid seagreen;
 }*/
 .story-img > img{
     width: 100%;
+    border-radius: 16px 16px 0 0;
+    padding-bottom: 20px;
 }
 .story-1{
     grid-row: 1/ span 3;
-    background-color: aquamarine;
+    position: relative;
             
 }
 .story-heading, .story-btn{
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    font-size: 46px;
+}
+.story-1, .story-2, .story-3, .story-4, .story-5{
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+    /*position: relative;*/
+} 
+.story-description > a{
+    text-decoration: none;
+    color: black;
 }
 
+.story-description{
+    padding: 0 38px 34px 38px;
+}
+.story-description-0{
+    font-weight: 500;
+    font-size: 20px;
+}
+.story-description-0 > p{
+    padding-top: 20px;
+}
+.story-description-1{
+    font-weight: 500;
+    font-size: 15px;
+}
+.date{
+    position: relative;
+    left: 2vw;
+    top: -7vh;
+    background-color: #95B226;
+    text-align: center;
+    border-radius: 47px;
+    width: 150px;
+    padding: 10px 0;
+}
+.date-1{
+    position: relative;
+    left: 3vw;
+    top: -7vh;
+    background-color: #95B226;
+    text-align: center;
+    border-radius: 47px;
+    width: 174px;
+    padding: 10px 0;
+}
 /*footer*/
 footer{
     max-width: 1158px;
