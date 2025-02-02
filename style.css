@@ -90,9 +90,17 @@ nav ul a{
 
 
 @media screen and (max-width: 576px) {
-     .nav-ber, .banner .school-more{
-        flex-direction: column;
+
+    .nav-ber{
+        max-width: 357px;
+        margin: 0px auto;
     }
+     .nav-title, .school-more, .btn-1{
+        display: none;
+     }
+     .banner{
+        flex-direction: column-reverse;
+     }
      }
 
 
@@ -161,66 +169,22 @@ nav ul a{
     height: 50px;
     font-size: 30px;
 }
+@media screen and (max-width: 576px) {
+    .curriculum-description{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
 
 /*story*/
 
-/*.story{
-    padding: 120px 141px 60px;
-    background-image: url(images/bg.png);
-    border: saddlebrown solid 5px;
-    background:linear-gradient(white, #ffe5b9)
-}
-.stories{
-    border: solid darkgoldenrod 5px;
-    display: flex;
-}
-.story-1, .story-2, .story-3, .story-4, .story-5, .story-heading, .story-btn{
-    border: solid black 2px;
-}
-.story-heading{
-    text-align: center;
-}
-.story-1, .story-2, .story-3, .story-4, .story-5{
-    background-color: white;
-}
-.extra-stories{
-    border: solid firebrick 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.story-1{
-    width: 500px;
-}
-.story-2, .story-3, .story-4, .story-5{
-    width: 265px;
-}
-.story-img{
-    width: 100%;
-}
-.date{
-    position: absolute;
-    background-color: #95B226;
-    text-align: center;
-    border-radius: 47px;
-    width: 174px;
-}
-.story-btn{
-    border: #01ACFD solid;
-    padding-top: 80px;
-    text-align: center;
-    color: white;
-}
-.btn-3{
-    color: white;
-    background-color: black;
-    padding: 10px 47px;
-    border: none;
-    border-radius: 12px;
-}*/
-
 
 .story{
+    background-image: url(images/bg.png);
     background:linear-gradient(white, #ffe5b9);
+    background-size: cover;
+    background-position: center;
     margin: 0 auto;
 }
 .stories{
@@ -232,9 +196,6 @@ nav ul a{
     margin: 0 auto;
     /*position: relative;*/
 }
-/*.story-1, .story-2, .story-3, .story-4, .story-5{
-    border: solid seagreen;
-}*/
 .story-img > img{
     width: 100%;
     border-radius: 16px 16px 0 0;
@@ -295,17 +256,39 @@ nav ul a{
     width: 174px;
     padding: 10px 0;
 }
+@media screen and (max-width: 576px) { 
+    .stories{
+        grid-template-columns: 1fr 1fr;
+    .story-1{
+        display: none;
+    }
+    }
+}
 /*footer*/
-footer{
-    max-width: 1158px;
+/*footer{
+    margin: 0 auto;
     text-align: center;
     display: inline;
 }
 .school-footer{
     display: flex;
     background-color: #01ACFD;
+    max-width: 1158px;
     padding: 123px 228px 174px 140px;
 }
 .footer-description{
     display: flex;
+}*/
+footer{
+    background-color: #01ACFD;
+    display: flex;
+    gap: 150px;
+    padding: 100px;
+}
+.footer-description{
+    display: flex;
+}
+.footer-about{
+    display: flex;
+    flex-direction: column;
 }
